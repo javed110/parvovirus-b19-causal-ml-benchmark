@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, cite the repository and the associated article when available."
+title: "DAG-guided benchmarking of causal machine learning for Parvovirus B19 IgG serostatus"
+type: software
+authors:
+  - family-names: Akhtar
+    given-names: Mehnaz
+  - family-names: Manzoor
+    given-names: Sobia
+  - family-names: Ashraf
+    given-names: Javed
+version: 1.0.0
+date-released: 2026-10-06
+repository-code: "https://github.com/javed110/parvovirus-b19-causal-ml-benchmark"
+keywords:
+  - causal machine learning
+  - DoubleML
+  - CausalForestDML
+  - synthetic data
+  - Parvovirus B19
+  - clinical epidemiology
+  - data quality

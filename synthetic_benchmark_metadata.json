@@ -1,0 +1,12 @@
+{
+  "base_seed": 20260730,
+  "records_definitive": 359,
+  "training_records": 287,
+  "holdout_records": 72,
+  "repeats": 3,
+  "epochs": 100,
+  "real_training_holdout_auc": 0.5375386996904025,
+  "real_training_holdout_brier": 0.25085917289485504,
+  "elapsed_seconds": 62.63645577430725,
+  "privacy_warning": "Five-nearest-distance and exact-match metrics are diagnostics, not proof of anonymity or privacy."
+}

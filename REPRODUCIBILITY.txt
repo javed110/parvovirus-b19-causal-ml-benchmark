@@ -1,0 +1,26 @@
+REPRODUCIBILITY BUNDLE
+DAG-guided benchmarking of causal machine learning for Parvovirus B19 IgG serostatus: a simulation study and data-quality audit
+Analysis date: 31 July 2026 | Base seed: 20260730
+
+CONTENTS
+- Locked Monte Carlo, causal-forest, sample-splitting and synthetic-benchmark outputs.
+- Non-disclosive aggregate cohort summaries and an aggregate audit JSON.
+- Six final 300-dpi manuscript figures.
+- Exact Python package requirements and SHA-256 manifest.
+
+HOW TO VERIFY
+1. Place Parvovirus_B19_DAG_DML_Reproducible_Analysis.ipynb in the same directory as the extracted bundle contents.
+2. Create and activate a Python 3.12 environment.
+3. Install: python -m pip install -r requirements.txt
+4. Register the kernel if needed:
+   python -m ipykernel install --user --name b19-causal-ml --display-name "Python (B19 causal ML)"
+5. Execute:
+   python -m nbconvert --execute --to notebook --inplace Parvovirus_B19_DAG_DML_Reproducible_Analysis.ipynb --ExecutePreprocessor.timeout=600
+
+The submitted default RUN_FULL_ANALYSIS=False verifies locked files, repetition counts, zero numerical failures, checksums, figures and manuscript claims. Set RUN_FULL_ANALYSIS=True only for a full recomputation; it may require at least 35 minutes on four CPU threads.
+
+PROTECTED DATA
+The source workbook is intentionally excluded because it contains patient IDs, names and sensitive health information. Full source-data or synthetic-generator recomputation requires institutionally authorized local access. Set environment variable B19_WORKBOOK to that workbook path. The loader immediately discards the identifier columns and does not display patient rows.
+
+INTERPRETIVE LIMITS
+The real cohort supports aggregate audit and description only. All causal estimator performance claims arise from parametric simulations with known truth. One missing age was median-imputed before synthetic-data generation; CBC, liver and renal fields were excluded rather than imputed. TVAE’s 92.3% exact benchmark-field match rate constitutes catastrophic overfitting and memorization and prohibits release. Exact-match and nearest-neighbour diagnostics are not numerical re-identification probabilities and do not establish anonymity. No patient-level synthetic dataset is included.

@@ -1,0 +1,7 @@
+domain,category,n,positive,positive_percent
+Clinical stratum,Fever,10,4,40.0
+Clinical stratum,Hepatic,24,12,50.0
+Clinical stratum,Other clinical,7,3,42.857142857142854
+Clinical stratum,Pregnancy,193,87,45.07772020725388
+Clinical stratum,Renal,38,26,68.42105263157895
+Clinical stratum,Unspecified,87,40,45.97701149425287

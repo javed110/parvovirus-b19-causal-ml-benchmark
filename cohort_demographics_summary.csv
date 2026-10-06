@@ -1,0 +1,8 @@
+domain,category,n,positive,positive_percent
+Gender,Female,235,105,44.680851063829785
+Gender,Male,124,67,54.03225806451613
+Age group (years; verified by clinical data custodian),≤19,45,17,37.77777777777778
+Age group (years; verified by clinical data custodian),20-29,159,70,44.0251572327044
+Age group (years; verified by clinical data custodian),30-39,95,47,49.473684210526315
+Age group (years; verified by clinical data custodian),40-49,21,10,47.61904761904762
+Age group (years; verified by clinical data custodian),≥50,38,27,71.05263157894737

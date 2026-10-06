@@ -1,0 +1,26 @@
+# Protected or patient-level data
+source_patient_data.xlsx
+deidentified_patient_data.json
+*patient-level*
+*patient_level*
+
+# Submission and private working files
+*.docx
+*.pdf
+*.zip
+*.log
+*.pid
+
+# Environments and caches
+.venv/
+venv/
+analysis_env/
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

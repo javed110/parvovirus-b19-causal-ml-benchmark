@@ -1,0 +1,82 @@
+{
+  "mode": "final",
+  "base_seed": 20260730,
+  "scenario_definitions": [
+    {
+      "name": "Null",
+      "effect": "null",
+      "overlap": "standard",
+      "unmeasured_confounding": false,
+      "outcome_misclassification": false,
+      "selective_missingness": false
+    },
+    {
+      "name": "Homogeneous",
+      "effect": "homogeneous",
+      "overlap": "standard",
+      "unmeasured_confounding": false,
+      "outcome_misclassification": false,
+      "selective_missingness": false
+    },
+    {
+      "name": "Heterogeneous",
+      "effect": "heterogeneous",
+      "overlap": "standard",
+      "unmeasured_confounding": false,
+      "outcome_misclassification": false,
+      "selective_missingness": false
+    },
+    {
+      "name": "Limited overlap",
+      "effect": "homogeneous",
+      "overlap": "limited",
+      "unmeasured_confounding": false,
+      "outcome_misclassification": false,
+      "selective_missingness": false
+    },
+    {
+      "name": "Selective missingness",
+      "effect": "homogeneous",
+      "overlap": "standard",
+      "unmeasured_confounding": false,
+      "outcome_misclassification": false,
+      "selective_missingness": true
+    },
+    {
+      "name": "Unmeasured confounding",
+      "effect": "homogeneous",
+      "overlap": "standard",
+      "unmeasured_confounding": true,
+      "outcome_misclassification": false,
+      "selective_missingness": false
+    },
+    {
+      "name": "Outcome misclassification",
+      "effect": "homogeneous",
+      "overlap": "standard",
+      "unmeasured_confounding": false,
+      "outcome_misclassification": true,
+      "selective_missingness": false
+    }
+  ],
+  "repetitions": {
+    "dml_logistic_n359_per_scenario": 1000,
+    "dml_boosted_tree_n359_per_scenario": 50,
+    "dml_logistic_n1000_n5000_selected_per_scenario": 75,
+    "dml_boosted_n1000_n5000_selected_per_scenario": 10,
+    "causal_forest_per_n": 20,
+    "sample_split_stability_per_learner": 30
+  },
+  "software_versions": {
+    "python": "3.12.13",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.6.1",
+    "doubleml": "0.11.3",
+    "econml": "0.16.0",
+    "sdv": "1.37.4",
+    "matplotlib": "3.11.1"
+  },
+  "elapsed_seconds": 1859.0802705287933
+}

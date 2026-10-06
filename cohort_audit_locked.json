@@ -1,0 +1,17 @@
+{
+    "od_max_absolute_residual":  0,
+    "negative":  187,
+    "positive":  172,
+    "rbc_tlc_normal_signature_rows":  140,
+    "privacy_warning":  "Direct identifiers and patient-level records are excluded. This file is aggregate and non-disclosive.",
+    "lft_rft_missingness_range_percent":  [
+                                              89.13,
+                                              96.2
+                                          ],
+    "od_complete_rows":  368,
+    "source_records":  368,
+    "rbc_tlc_swap_signature_rows":  66,
+    "age_missing_definitive":  1,
+    "borderline_excluded":  9,
+    "definitive_records":  359
+}
