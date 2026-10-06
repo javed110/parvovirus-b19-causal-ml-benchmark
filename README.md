@@ -86,3 +86,7 @@ This repository contains no direct identifiers, patient-level source records, or
 ## Citation
 
 Use the metadata in `CITATION.cff`. Until a peer-reviewed article or DOI is available, cite this repository as a software and research artifact and include the accessed commit SHA.
+
+## Lightweight independent verification
+
+Run `python scripts/verify_locked.py` using Python's standard library. It checks committed numerical/figure hashes, cohort totals, raw-to-summary DML arithmetic and synthetic-generator means. Public CI runs these checks without protected data or full modeling libraries. It does not rerun the clinical audit, Monte Carlo fits or synthetic generators. Legacy manifest hashes for documentation are historical; the checker scopes integrity claims to numerical/figure artifacts.
